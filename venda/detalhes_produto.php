@@ -8,6 +8,8 @@ if(!isset($_GET['id'])) {
 $produtoID = intval($_GET['id']);
 
 // Buscar dados do produto
+
+//buscar os dados do produto
 $sql = "SELECT p.*, c.NomeCategoria 
         FROM tb_produto p
         LEFT JOIN tb_categoria c ON p.CategoriaID = c.CategoriaID
