@@ -1,0 +1,157 @@
+
+.nav-button-dark {
+    color: white !important;
+}
+
+.nav-button-dark:hover {
+    color: #00003b !important;
+    text-decoration: none;
+}
+
+
+.custom-navbar {
+    position: relative; /* para o ::before posicionar corretamente */
+    padding-top: 10px; /* espaço para a linha superior */
+    height: 70px;
+    background-color: #5A9392 !important; /* cor da navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-navbar::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 15px; /* altura da linha superior */
+    background-color: #00003b; /* azul escuro */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.logo {
+    height: 45px;
+}
+
+/* Links da navbar com azul escuro */
+.nav-button {
+    background: transparent;
+    color: #ffffff !important; /* Azul escuro */
+    padding: 8px 15px;
+    margin-left: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    transition: 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-button:hover {
+    border-bottom: 2px solid #00003b;
+    border-radius: 4px;
+    color: #00003b !important;
+    text-decoration: none;
+}
+
+/* Botão principal fora da navbar */
+.btn-custom {
+    background-color: #ffffff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-custom:hover {
+    background-color: #000050;
+}
+
+/* Imagem de fundo logo abaixo da navbar */
+.background-section {
+    background: url('screen.jpg') no-repeat center center;
+    background-size: cover;
+    background-image:'screen.jpg';
+    height: 600px;
+    margin-top: 3px;
+}
+
+.info-section {
+    background-color: #f0f4f7; /* fundo levemente acinzentado para contraste */
+}
+
+.text-primary {
+    color: #00003b !important; /* azul escuro para títulos */
+}
+
+.text-info {
+    color: #1d4e89; /* tom de azul médio para texto */
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #07587e;
+  color: white;
+}
+
+/* Cabeçalho */
+.header {
+  text-align: center;
+  padding: 40px 20px;
+  color:White;
+  background-color: #07587e;
+}
+
+.header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.header h2 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* Grade das secções */
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #07587e;
+}
+
+/* Cartões individuais */
+.card {
+  width: 250px;
+  background-color: #07587e;
+  color:#00003b;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Ícone de destaque */
+.icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* Rodapé */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-social {
+  margin-top: 10px;
+  font-size: 16px;
+}
